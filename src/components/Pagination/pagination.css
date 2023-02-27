@@ -1,0 +1,33 @@
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.page-item{
+}
+ul{
+    list-style-type: none;
+    display:inline-block;
+    padding:0px;
+
+
+}
+
+li:first-child {
+    border-left: 1px solid black;
+}
+li{
+    text-decoration: none;
+    border: 0px solid black;
+    border-width: 1px 1px 1px 0px;
+    padding:0px 5px 0px 5px;
+
+}
+.active{
+    background-color: royalblue;
+    color:white;
+}
+li:hover{
+    cursor: pointer;
+}
