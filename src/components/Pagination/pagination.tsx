@@ -1,8 +1,10 @@
 import React from 'react'
 import './pagination.css'
 export default function pagination({ nPages, currentPage, setCurrentPage }:{nPages:number,currentPage:number, setCurrentPage:Function}) {
-    const pageNumbers = [1,2,3,4,5,6,7,8,9,10]
-
+    const pageNumbers: number[]=[]
+    for (let i = 1; i <= nPages; i++) {
+        pageNumbers.push(i);
+    }
     const handlePageClick = (pgNumber: any) => {
         setCurrentPage(pgNumber)
     };
